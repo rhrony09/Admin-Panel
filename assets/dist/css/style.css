@@ -1,0 +1,76 @@
+/* Theme switch button Start */
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 50px;
+}
+.theme-switch input {
+  display: none;
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 400ms;
+}
+.slider.round::before {
+  border-radius: 50%;
+}
+.slider::before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: 400ms;
+  width: 16px;
+}
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+/* Theme switch button End */
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo img {
+  max-width: 50px;
+  padding-right: 10px;
+}
+
+.profile-pic {
+  max-width: 150px;
+  border: 5px solid #666;
+}
+
+.profile-bg {
+  background-color: #e7e7e7;
+}
+.dark-mode .profile-bg {
+  background-color: #454d55;
+}
+
+.sidebar {
+  height: calc(100vh - 9.5rem);
+}
+
+th,
+td {
+  white-space: nowrap;
+}
